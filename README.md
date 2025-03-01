@@ -72,9 +72,6 @@ Below is a **static image** illustrating the entire pipeline:
 
 ![AWS Secure File Transfer Pipeline](Architecture Diagram.png)
 
-
-
-
 **Diagram Explanation**:  
 - The **PC** (with Task Scheduler) and **Telegram Bot** both feed files/commands into EC2.  
 - EC2’s cron job uploads them to **S3**, then triggers a **Cleanup** script that deletes the local copy.  
