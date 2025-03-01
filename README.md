@@ -68,38 +68,12 @@ This repository holds:
 
 ## Architecture Diagram
 
-Below is a **Mermaid** diagram that visually represents the pipeline:
+Below is a **static image** illustrating the entire pipeline:
 
-```
-flowchart TB
-    %% Define subgraph for PC
-    subgraph PC
-        PC1["Windows Task Scheduler"]
-    end
+![AWS Secure File Transfer Pipeline](images/diagram.png)
 
-    %% Define subgraph for Telegram
-    subgraph Telegram
-        TBot["Telegram Bot"]
-    end
+> *Tip:* Make sure the file path (`images/diagram.png`) matches exactly where you placed the image in your repo.
 
-    %% Define subgraph for EC2
-    subgraph EC2 [EC2 Ubuntu]
-        Cron["Cron Job: Checks for New Files"]
-        Cleanup["Cleanup: Delete Local Files"]
-    end
-
-    %% Define subgraph for AWS
-    subgraph AWS [Amazon Web Services]
-        S3["AWS S3 Bucket"]
-    end
-
-    %% Arrows between the nodes
-    PC1 -->|SCP w/ SSH Key| Cron
-    TBot -->|File Upload and 'killswitch' Command and overall notification system| Cron
-    Cron -->|aws s3 cp| S3
-    Cleanup -->|Post-upload| Cron
-
-```
 
 **Diagram Explanation**:  
 - The **PC** (with Task Scheduler) and **Telegram Bot** both feed files/commands into EC2.  
