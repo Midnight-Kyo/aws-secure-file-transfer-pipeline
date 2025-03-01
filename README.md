@@ -70,7 +70,7 @@ This repository holds:
 
 Below is a **static image** illustrating the entire pipeline:
 
-![AWS Secure File Transfer Pipeline](Architecture-Diagram.png)
+![AWS Secure File Transfer Pipeline](Media/Architecture-Diagram.png)
 
 **Diagram Explanation**:  
 - The **PC** (with Task Scheduler) and **Telegram Bot** both feed files/commands into EC2.  
