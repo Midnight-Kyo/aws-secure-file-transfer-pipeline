@@ -70,9 +70,9 @@ This repository holds:
 
 Below is a **static image** illustrating the entire pipeline:
 
-![AWS Secure File Transfer Pipeline](images/diagram.png)
+![AWS Secure File Transfer Pipeline](Architecture Diagram.png)
 
-> *Tip:* Make sure the file path (`images/diagram.png`) matches exactly where you placed the image in your repo.
+
 
 
 **Diagram Explanation**:  
