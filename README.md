@@ -1,6 +1,3 @@
-
----
-
 # AWS Secure File Transfer Pipeline
 
 **Author**: Wahab  
@@ -247,7 +244,3 @@ bot.polling()
    - Use security groups and NACLs in AWS for an extra layer of protection.
 
 ---
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). See the license file for details on usage and modification rights.
