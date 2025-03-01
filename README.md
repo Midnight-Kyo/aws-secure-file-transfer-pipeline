@@ -79,18 +79,19 @@ Below is a **static image** illustrating the entire pipeline:
 
 ---
 
-## Telegram Bot Demo (Screenshot)
+## Telegram Bot Demo (Screenshots)
 
-Below is a placeholder for a **screenshot** showing the bot in action.  
-*(Upload your screenshot to a folder like `docs/` or `media/` in your repo, then reference it here.)*
+Below are two **example screenshots** showing how the Telegram Bot reports successful uploads:
 
-```markdown
-![Telegram Bot Upload Demo](media/telegram_bot_upload.png)
-```
+**pc -> EC2 -> EC3**  
+![Example 1](Media/Example_1.png)
 
-> *Example: The bot receiving a file from my phone, confirming receipt, and later sending a success message once the file is in S3.*
+> The bot sends confirmation messages when files successfully upload from PC → EC2 and from EC2 → S3.
 
----
+**Phone -> EC2 -> S3**  
+![Example 2](Media/Example_2.png)
+
+> Images sent via Telegram are also stored on EC2 and automatically uploaded to S3, with a status message confirming success.
 
 ## Setup & Configuration
 
